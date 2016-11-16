@@ -20,6 +20,7 @@ public class PalindromeActivity extends AppCompatActivity {
         final TextView textView = (TextView) findViewById(R.id.text_view);
         final Button button = (Button) findViewById(R.id.button_ok);
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(android.R.color.holo_green_dark)));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +31,7 @@ public class PalindromeActivity extends AppCompatActivity {
                 String pal = editText.getText().toString();
                 if (p.Palindrome(pal)) {
                     fab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(android.R.color.holo_green_dark)));
-                }else {
+                } else {
                     fab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(android.R.color.holo_red_dark)));
                 }
             }
