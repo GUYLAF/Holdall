@@ -5,10 +5,23 @@ package com.guylaf.holdall;
  */
 
 public class Palindrome {
-    public Boolean Palindrome()
+
+    public String Inverse(String mot)
 
     {
-        String mot = "laval";
+        //String mot = "Langage Java";
+        StringBuffer motInverse = new StringBuffer("");
+        int lg = mot.length();
+
+        for (int j = lg - 1; j >= 0; j--) {
+            motInverse.append(mot.charAt(j));
+        }
+        return motInverse.toString();
+    }
+    public Boolean Palindrome(String mot)
+
+    {
+        //String mot = "laval";
         StringBuffer palindrome = new StringBuffer("");
         int lg = mot.length();
 
