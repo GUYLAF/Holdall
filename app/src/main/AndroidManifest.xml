@@ -22,7 +22,10 @@
         <activity
             android:name=".FabActivity"
             android:label="@string/title_activity_fab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdapterActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".PhotoVerticale"></activity>
     </application>
 
 </manifest>
